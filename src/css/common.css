@@ -17,7 +17,8 @@ img {
   max-width: 100%;
 }
 
-button {
+button.start,
+button.stop {
   padding: 30px;
   border-radius: 15px;
   background-color: aqua;
@@ -29,4 +30,45 @@ button {
   margin-top: 150px;
   margin-left: 570px;
   margin-right: 50px;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 20px;
+  color: rgb(5, 21, 242);
+}
+
+/* .value {
+  font-size: 50px;
+  color: rgb(5, 21, 242);
+} */
+
+.timer-btn {
+  /* background-color: rgb(5, 21, 242); */
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  color: rgb(44, 34, 18);
+  border: 2px solid rgb(5, 21, 242);
+}
+
+.datetime-picker {
+  padding: 12px;
+  border-radius: 50px;
+  border: none;
+  border: 2px solid rgb(5, 21, 242);
+  outline: none;
+}
+
+.timer {
+  font-size: 50px;
+  color: rgb(5, 21, 242);
+  /* display: block; */
+  /* font-size: 20px;
+  color: rgb(5, 21, 242); */
 }

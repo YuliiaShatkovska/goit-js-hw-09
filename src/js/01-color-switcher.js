@@ -9,9 +9,10 @@ const stopButton = document.querySelector('button[data-stop]');
 const body = document.querySelector('body');
 
 startButton.classList.add('start');
+stopButton.classList.add('stop');
 
 startButton.addEventListener('click', onClickChangeColor);
-stopButton.setAttribute('disabled', '');
+stopButton.disabled = true;
 
 let intervalId = 0;
 
@@ -20,14 +21,14 @@ function onClickChangeColor() {
     body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 
-  startButton.setAttribute('disabled', '');
-  stopButton.removeAttribute('disabled');
+  startButton.disabled = true;
+  stopButton.disabled = false;
 }
 
 stopButton.addEventListener('click', onClickStopChangeColor);
 
 function onClickStopChangeColor() {
   clearInterval(intervalId);
-  startButton.removeAttribute('disabled');
-  stopButton.setAttribute('disabled', '');
+  startButton.disabled = false;
+  stopButton.disabled = true;
 }
