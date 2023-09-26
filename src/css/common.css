@@ -43,13 +43,7 @@ button.stop {
   color: rgb(5, 21, 242);
 }
 
-/* .value {
-  font-size: 50px;
-  color: rgb(5, 21, 242);
-} */
-
 .timer-btn {
-  /* background-color: rgb(5, 21, 242); */
   border: none;
   padding: 15px;
   border-radius: 50px;
@@ -68,7 +62,28 @@ button.stop {
 .timer {
   font-size: 50px;
   color: rgb(5, 21, 242);
-  /* display: block; */
-  /* font-size: 20px;
-  color: rgb(5, 21, 242); */
+}
+
+.form {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+input {
+  margin-top: 10px;
+  display: block;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid rgb(5, 21, 242);
+  padding: 5px;
+  outline: none;
+}
+
+.form-btn {
+  padding: 10px;
+  border: none;
+  border: 2px solid rgb(5, 21, 242);
+  border-radius: 30px;
 }

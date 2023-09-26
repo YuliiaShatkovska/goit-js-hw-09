@@ -31,7 +31,6 @@ const picker = flatpickr('#datetime-picker', options);
 
 function closeDataTimePicker(selectedDates) {
   const selectedDate = selectedDates[0];
-  console.log(selectedDate);
   const currentDay = Date.now();
 
   if (selectedDate <= currentDay) {
