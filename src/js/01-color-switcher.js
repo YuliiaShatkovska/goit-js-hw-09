@@ -21,14 +21,17 @@ function onClickChangeColor() {
     body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 
-  startButton.disabled = true;
-  stopButton.disabled = false;
+  buttonDisable(true);
 }
 
 stopButton.addEventListener('click', onClickStopChangeColor);
 
 function onClickStopChangeColor() {
   clearInterval(intervalId);
-  startButton.disabled = false;
-  stopButton.disabled = true;
+  buttonDisable(false);
+}
+
+function buttonDisable(value) {
+  startButton.disabled = value;
+  stopButton.disabled = !value;
 }
